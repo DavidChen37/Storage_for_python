@@ -1,0 +1,28 @@
+print "Welcome to the System"
+print "Login(L) ,Register(R) or Exit(X):" 
+command = get user input
+if command is L
+    ask for login details
+    filter through each line in accounts.txt 
+        save user details if account username and password matches 
+            print "View Users(V) or Exit(X):"
+            command= get user input
+            if command is "V"
+                print all account details from accounts.txt
+                return back to the admin menu
+            if command is "X"
+                return back to the main menu
+            else 
+                print error message
+        otherwise return to main menu
+if command is R
+    username =get username input from user
+    password =get password input from user
+        filter through each line in accounts.txt save account details if username and password isn't being used
+    if the password is "G" for autogenerate 
+        ask for password requirements such as :numbers,letters,special characters and number of characters
+        choices= character options for the password based off the requirements
+        append and randomly choose a character from "choices" by the number of characters required
+    then return back to the main menu
+if command is X
+    wait for 2 seconds before ending the application
